@@ -21,7 +21,7 @@ public class Runner
         var consumer = $"[{Environment.MachineName}]";
         var msg = $"[Queue setting result] consumer :  {consumer} ";
         
-        //DoConsumeProcess(body)
+        
         await _worker.RunAsync(msg);
     }
 
