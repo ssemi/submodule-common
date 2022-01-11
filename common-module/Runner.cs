@@ -20,7 +20,7 @@ public class Runner
     {
         var consumer = $"[{Environment.MachineName}]";
         var msg = $"[Queue setting result] consumer :  {consumer} ";
-        Console.WriteLine(msg);
+        
         //DoConsumeProcess(body)
         await _worker.RunAsync(msg);
     }
